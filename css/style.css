@@ -27,7 +27,27 @@
   --max: 1180px;
   --radius: 4px;
 }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
 
+.logo {
+  width: 100px;      /* Adjust as needed */
+  height: 100px;
+  object-fit: contain;
+}
+
+.brand span {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand small {
+  font-size: 0.8rem;
+}
 *,*::before,*::after{ box-sizing: border-box; }
 html{ scroll-behavior: smooth; }
 body{
