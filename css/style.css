@@ -5,9 +5,9 @@
 
 :root{
   /* Color */
-  --sky: #1E7FBF;
-  --sky-dark: #145E92;
-  --sky-light: #EAF4FB;
+  --sky: #45BEE6;
+  --sky-dark: #0E7A9E;
+  --sky-light: #EAF8FC;
   --charcoal: #24282C;
   --charcoal-2: #3A3F44;
   --charcoal-soft: #565C62;
@@ -102,7 +102,7 @@ p{ margin: 0 0 1em; }
 }
 .brand .mark{
   width:34px; height:34px; border-radius: var(--radius);
-  background: var(--sky);
+  background: var(--sky-dark);
   color:#fff;
   display:flex; align-items:center; justify-content:center;
   font-size: 15px; font-weight:700;
@@ -124,7 +124,7 @@ p{ margin: 0 0 1em; }
   font-weight: 500;
 }
 .nav-desktop a{ position:relative; padding: 6px 0; color: var(--charcoal-2); }
-.nav-desktop a:hover, .nav-desktop a[aria-current="page"]{ color: var(--sky); }
+.nav-desktop a:hover, .nav-desktop a[aria-current="page"]{ color: var(--sky-dark); }
 .nav-desktop a[aria-current="page"]::after{
   content:''; position:absolute; left:0; right:0; bottom:0; height:2px; background: var(--grain);
 }
@@ -142,8 +142,8 @@ p{ margin: 0 0 1em; }
   white-space: nowrap;
 }
 .btn:hover{ transform: translateY(-1px); }
-.btn-primary{ background: var(--sky); color:#fff; }
-.btn-primary:hover{ background: var(--sky-dark); }
+.btn-primary{ background: var(--sky-dark); color:#fff; }
+.btn-primary:hover{ background: var(--sky-dark); filter: brightness(0.87); }
 .btn-grain{ background: var(--grain); color:#fff; }
 .btn-grain:hover{ background: var(--grain-dark); }
 .btn-ghost{ background: transparent; border-color: var(--charcoal); color: var(--charcoal); }
@@ -176,7 +176,7 @@ p{ margin: 0 0 1em; }
   font-weight:500;
   font-size: 16px;
 }
-.nav-mobile a[aria-current="page"]{ color: var(--sky); }
+.nav-mobile a[aria-current="page"]{ color: var(--sky-dark); }
 .nav-mobile .header-actions{ padding: 16px 20px; flex-direction:column; align-items:stretch; }
 
 @media (min-width: 900px){
@@ -396,7 +396,7 @@ section{ padding: 64px 0; }
 
 /* CTA band */
 .cta-band{
-  background: var(--sky);
+  background: var(--sky-dark);
   color:#fff;
   padding: 46px 0;
   text-align:center;
@@ -491,7 +491,7 @@ form.enquiry{ display:flex; flex-direction:column; gap:14px; }
 }
 .enquiry textarea{ min-height: 110px; resize: vertical; }
 .enquiry input:focus, .enquiry select:focus, .enquiry textarea:focus{
-  outline: 2px solid var(--sky); border-color: var(--sky);
+  outline: 2px solid var(--sky-dark); border-color: var(--sky-dark);
 }
 .form-note{ font-size: 13px; color: var(--charcoal-soft); }
 

@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var text = 'Hello B&G Freedom, my name is ' + (name || 'a visitor') +
         '. I am interested in: ' + (product || 'general enquiry') +
         (message ? ('. ' + message) : '');
-      var url = 'https://wa.me/2348034567890?text=' + encodeURIComponent(text);
+      var url = 'https://wa.me/2348034182374?text=' + encodeURIComponent(text);
       window.open(url, '_blank');
     });
   }
