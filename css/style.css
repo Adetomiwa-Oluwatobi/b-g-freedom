@@ -217,11 +217,16 @@ p{ margin: 0 0 1em; }
   color:#fff;
   overflow:hidden;
 }
+.hero-slideshow{ position:absolute; inset:0; }
 .hero-media{
   position:absolute; inset:0;
   background-size: cover;
   background-position: center 60%;
+  opacity: 0;
+  transition: opacity 1.6s ease;
+  will-change: opacity;
 }
+.hero-media.is-active{ opacity: 1; }
 .hero-media::after{
   content:'';
   position:absolute; inset:0;

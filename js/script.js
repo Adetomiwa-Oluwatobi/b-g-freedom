@@ -12,6 +12,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // Hero slideshow: crossfade between multiple background images
+  var heroSlides = document.querySelectorAll('.hero-slideshow .hero-media');
+  if (heroSlides.length > 1) {
+    var currentSlide = 0;
+    setInterval(function () {
+      heroSlides[currentSlide].classList.remove('is-active');
+      currentSlide = (currentSlide + 1) % heroSlides.length;
+      heroSlides[currentSlide].classList.add('is-active');
+    }, 5000);
+  }
+
   var toggle = document.querySelector('.menu-toggle');
   var nav = document.querySelector('.nav-mobile');
   if (toggle && nav) {
